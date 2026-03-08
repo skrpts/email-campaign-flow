@@ -1,0 +1,40 @@
+# --- Identity ---
+name: "email-campaign-flow"
+display_name: "Email Campaign Flow"
+description: "Audience segmentation, copy, A/B test plan, and send schedule"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/email-campaign-flow"
+
+# --- Discovery (Hub) ---
+category: "marketing"
+tags:
+  - "email"
+  - "campaign"
+  - "conversion"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+    - "openai-gpt4"
+  permissions: []
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 2
+  prompts: 3
+  workflows: 1
+  services: 0
+  sources: 3
+  documents: 1
+  assets: 1
+  total: 11
