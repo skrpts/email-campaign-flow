@@ -5,7 +5,7 @@ title: A/B Test Analysis
 description: "Interprets experiment results and recommends winning variants"
 tags: [Tested]
 connections:
-  - target: openai-gpt4
+  - target: llm-service
     type: runs_on
 ---
 

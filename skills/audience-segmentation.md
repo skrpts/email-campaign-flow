@@ -5,7 +5,7 @@ title: Audience Segmentation
 description: "Divides target markets into actionable segments"
 tags: []
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
 ---
 
