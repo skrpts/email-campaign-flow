@@ -3,7 +3,7 @@ type: source
 id: brand-voice-guidelines
 title: Brand Voice Guidelines
 description: "Reference for maintaining consistent brand voice in email communications"
-tags: []
+tags: [Production]
 connections: []
 ---
 

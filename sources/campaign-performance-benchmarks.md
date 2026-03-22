@@ -3,7 +3,7 @@ type: source
 id: campaign-performance-benchmarks
 title: Campaign Performance Benchmarks
 description: "Industry benchmarks for email campaign performance metrics"
-tags: []
+tags: [Production]
 connections: []
 ---
 

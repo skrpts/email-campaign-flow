@@ -16,3 +16,7 @@ Produces email copy variants tailored to audience segments and campaign objectiv
 ## Prompt
 
 Write email campaign copy for the following audience segment and campaign objective. Include: 3 subject line variants for A/B testing, preview text, email body with personalisation placeholders, primary CTA, and a P.S. line. Ensure the copy adheres to brand voice guidelines, is GDPR-compliant with unsubscribe language, and is optimised for mobile reading (short paragraphs, scannable format).
+
+### Inputs
+
+This prompt receives all outputs from the previous stage. Use the audience segments and campaign brief from the segmentation stage to write targeted copy for each segment.

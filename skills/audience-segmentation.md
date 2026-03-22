@@ -3,7 +3,7 @@ type: skill
 id: audience-segmentation
 title: Audience Segmentation
 description: "Divides target markets into actionable segments"
-tags: []
+tags: [Production]
 connections:
   - target: llm-service
     type: runs_on

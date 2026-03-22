@@ -3,7 +3,7 @@ type: document
 id: email-marketing-playbook
 title: Email Marketing Playbook
 description: "Best practices and processes for email marketing campaigns"
-tags: []
+tags: [Production]
 connections: []
 ---
 
