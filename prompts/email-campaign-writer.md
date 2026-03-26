@@ -19,4 +19,7 @@ Write email campaign copy for the following audience segment and campaign object
 
 ### Inputs
 
-This prompt receives all outputs from the previous stage. Use the audience segments and campaign brief from the segmentation stage to write targeted copy for each segment.
+- **Audience segments:** {{steps.segment-audience.output}}
+- **Campaign brief:** {{input.brief}}
+
+Use the audience segments and campaign brief above to write targeted copy for each segment.

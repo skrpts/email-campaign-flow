@@ -19,4 +19,5 @@ You are a data analyst specialising in marketing experiments. Given the followin
 
 ### Inputs
 
-- **A/B test data:** Using the A/B test design and results from the previous stages.
+- **A/B test design:** {{steps.a-b-test-analysis.output}}
+- **Email copy variants:** {{steps.email-campaign-writer.output}}
