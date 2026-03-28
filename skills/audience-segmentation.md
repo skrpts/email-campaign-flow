@@ -2,8 +2,8 @@
 type: skill
 id: audience-segmentation
 title: Audience Segmentation
-description: "Divides target markets into actionable segments"
-tags: [Production]
+description: "Divides target markets into actionable segments based on behaviour and demographics"
+tags: [Tested]
 connections:
   - target: llm-service
     type: runs_on
@@ -11,18 +11,19 @@ connections:
 
 ## Capability
 
-Analyses subscriber data, engagement metrics, and behavioural patterns to divide email lists into targeted segments for personalised messaging.
+Analyses customer data and market research to identify distinct audience segments with shared characteristics, needs, and behaviours.
 
 ## When to Use
 
-- Planning email campaigns
-- Improving open and click-through rates
-- Personalising content for different subscriber groups
+- Planning targeted campaigns
+- Personalising email marketing
+- Defining ad audience groups
+- Prioritising product messaging
 
 ## Inputs
 
-Subscriber data, engagement history, purchase behaviour, demographic data
+Customer data, survey results, behavioural analytics, market research
 
 ## Outputs
 
-Segment definitions with subscriber counts, engagement profiles, and recommended messaging approaches
+Segment profiles: demographics, psychographics, pain points, preferred channels, messaging angle
