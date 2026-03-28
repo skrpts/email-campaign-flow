@@ -1,4 +1,5 @@
 # --- Identity ---
+id: "a2d3b13c-5a93-4b6d-9f2f-5c7eeae65fbe"
 name: "email-campaign-flow"
 display_name: "Email Campaign Flow"
 description: "Audience segmentation, copy, A/B test plan, and send schedule"
