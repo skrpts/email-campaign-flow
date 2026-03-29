@@ -3,7 +3,7 @@ type: prompt
 id: email-campaign-writer
 title: Email Campaign Writer
 description: "Task prompt for generating email campaign copy"
-tags: [Customer-Facing, writing:communication, optimisation:conversion]
+tags: [Customer-Facing, Campaign, Communication]
 connections:
   - target: audience-segmentation
     type: derived_from

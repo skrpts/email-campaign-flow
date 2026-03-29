@@ -3,7 +3,7 @@ type: asset
 id: email-template-html
 title: Email Template HTML
 description: "Base HTML template for email campaigns"
-tags: [Production, writing:communication, optimisation:conversion]
+tags: [Production, Campaign, Communication]
 connections: []
 ---
 
