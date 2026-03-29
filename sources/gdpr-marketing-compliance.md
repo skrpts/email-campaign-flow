@@ -3,7 +3,7 @@ type: source
 id: gdpr-marketing-compliance
 title: GDPR Marketing Compliance
 description: "Reference for GDPR compliance in email marketing"
-tags: [Production]
+tags: [Production, utility:compliance, writing:communication]
 connections: []
 ---
 

@@ -3,7 +3,7 @@ type: prompt
 id: analyse-a-b-test
 title: Analyse A/B Test
 description: "Core prompt for interpreting A/B test results"
-tags: [Production]
+tags: [Production, optimisation:conversion, writing:communication]
 connections:
   - target: a-b-test-analysis
     type: derived_from

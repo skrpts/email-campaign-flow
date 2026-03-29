@@ -3,7 +3,7 @@ type: workflow
 id: email-campaign-flow
 title: Email Campaign Flow
 description: "Audience segmentation, copy, A/B test plan, and send schedule"
-tags: [Production, Tested]
+tags: [Production, Tested, analysis:audience, optimisation:conversion]
 connections:
   - target: audience-segmentation
     type: uses
