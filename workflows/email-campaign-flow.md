@@ -17,6 +17,18 @@ connections:
     type: uses
   - target: llm-service
     type: runs_on
+  - target: headline-writing
+    type: uses
+  - target: brand-voice-guide
+    type: references
+  - target: campaign-performance-benchmarks
+    type: references
+  - target: gdpr-marketing-compliance
+    type: references
+  - target: email-marketing-playbook
+    type: references
+  - target: email-template-html
+    type: references
 ---
 
 ## Overview
