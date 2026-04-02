@@ -42,4 +42,4 @@ connections: []
 | {{company}} | Subscriber company | "Acme Ltd" |
 | {{headline}} | Email headline | "Introducing..." |
 | {{cta_text}} | Button text | "Get Started" |
-| {{cta_url}} | Button destination | "https://..." |
+| {{cta_url}} | Button destination | "`https://...`" |
