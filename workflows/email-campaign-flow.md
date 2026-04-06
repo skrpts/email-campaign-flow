@@ -9,12 +9,6 @@ connections:
     type: uses
   - target: a-b-test-analysis
     type: uses
-  - target: segment-audience
-    type: uses
-  - target: analyse-a-b-test
-    type: uses
-  - target: email-campaign-writer
-    type: uses
   - target: llm-service
     type: runs_on
   - target: headline-writing
