@@ -19,7 +19,7 @@ Write email campaign copy for the following audience segment and campaign object
 
 ### Inputs
 
-- **Audience segments:** {{steps.segment-audience.output}}
+- **Audience segments:** {{steps.Audience Segmentation.output}}
 - **Campaign brief:** {{input.brief}}
 
 Use the audience segments and campaign brief above to write targeted copy for each segment.
