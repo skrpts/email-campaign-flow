@@ -4,6 +4,13 @@ id: email-campaign-writer
 title: Email Campaign Writer
 description: "Task prompt for generating email campaign copy"
 tags: [Customer-Facing, Campaign, Communication]
+inputs:
+  brief:
+    label: "Brief"
+    description: "The full assignment or project brief including requirements, constraints, and expected deliverables"
+    example: "Write a 2000-word analysis of competitive pricing strategies in the SaaS market"
+    required: true
+    type: text
 connections:
   - target: audience-segmentation
     type: derived_from
