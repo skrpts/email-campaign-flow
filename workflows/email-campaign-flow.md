@@ -28,10 +28,8 @@ execution:
     step_type: "synthesis"
   - skill: "a-b-test-analysis"
     step_type: "synthesis"
-    input_from: "audience-segmentation"
   - skill: "headline-writing"
     step_type: "generation"
-    input_from: "a-b-test-analysis"
 ---
 
 ## Overview
