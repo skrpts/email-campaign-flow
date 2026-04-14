@@ -23,6 +23,11 @@ connections:
     type: references
   - target: email-template-html
     type: references
+output_step: "headline-writing"
+composite_steps:
+  - "audience-segmentation"
+  - "a-b-test-analysis"
+  - "headline-writing"
 execution:
   - skill: "audience-segmentation"
     step_type: "synthesis"
