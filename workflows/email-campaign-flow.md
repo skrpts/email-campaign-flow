@@ -31,6 +31,8 @@ composite_steps:
 execution:
   - skill: "audience-segmentation"
     step_type: "synthesis"
+    context:
+      market_context: ""
   - skill: "a-b-test-analysis"
     step_type: "synthesis"
   - skill: "headline-writing"
