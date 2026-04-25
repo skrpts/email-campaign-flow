@@ -33,7 +33,7 @@ composite_steps:
 execution:
   - skill: "audience-segmentation"
     step_type: "synthesis"
-    prompt: "segment-audience"
+    prompt: "email-campaign-brief"
     context:
       market_context: ""
   - skill: "a-b-test-analysis"
