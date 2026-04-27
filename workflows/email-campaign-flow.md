@@ -37,8 +37,10 @@ execution:
     context:
       market_context: ""
   - skill: "a-b-test-analysis"
+    prompt: "analyse-a-b-test"
     step_type: "synthesis"
   - skill: "headline-writing"
+    prompt: "write-headlines"
     step_type: "generation"
 ---
 
