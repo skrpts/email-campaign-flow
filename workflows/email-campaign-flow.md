@@ -35,7 +35,7 @@ execution:
     step_type: "synthesis"
     prompt: "email-campaign-brief"
     context:
-      market_context: ""
+      market_context: "No additional market context"
   - skill: "a-b-test-analysis"
     prompt: "analyse-a-b-test"
     step_type: "synthesis"
@@ -46,8 +46,8 @@ execution:
     step_type: "content"
     prompt: "polish-language"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
 ---
 
 ## Overview
