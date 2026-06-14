@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.24
+GH#643 — declared GDPR + CAN-SPAM compliance. The skrpt generates marketing email copy and templates governed by these frameworks (mandates GDPR-compliant unsubscribe language, embeds the CAN-SPAM-required company address, unsubscribe and privacy links, and ships a GDPR marketing-compliance reference source). Declaring `requires.compliance: [gdpr, can-spam]` makes the manifest honest about what the workflow operates under; the scanner now resolves the previously-undeclared `compliance-gdpr` / `compliance-can-spam` findings to declared.
+
 ## v1.1.23
 GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 9 inline shared-content files and declare 9 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Closes pre-Step-3 inline-vendoring for this bundle.
 

@@ -3,7 +3,7 @@ id: "a2d3b13c-5a93-4b6d-9f2f-5c7eeae65fbe"
 name: "email-campaign-flow"
 display_name: "Email Campaign Flow"
 description: "Audience segmentation, copy, A/B test plan, and send schedule"
-version: "1.1.23"
+version: "1.1.24"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -66,6 +66,9 @@ requires:
   permissions: []
   data_handling:
     - "pii"
+  compliance:
+    - "gdpr"
+    - "can-spam"
 
 # --- Contents ---
 contents:
@@ -77,3 +80,17 @@ contents:
   documents: 1
   assets: 1
   total: 8
+
+security:
+  status: "pass"
+  scanned_at: "2026-06-14T18:31:08.097Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: ["pii"]
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/email-campaign-flow/security"
