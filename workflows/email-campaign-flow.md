@@ -34,17 +34,21 @@ execution:
   - skill: "audience-segmentation"
     step_type: "synthesis"
     prompt: "email-campaign-brief"
+    output: { name: "campaign_brief", type: "text" }
     context:
       market_context: "No additional market context"
   - skill: "a-b-test-analysis"
     prompt: "analyse-a-b-test"
     step_type: "synthesis"
+    output: { name: "ab_test_analysis", type: "text" }
   - skill: "headline-writing"
     prompt: "write-headlines"
     step_type: "generation"
+    output: { name: "subject_lines", type: "list" }
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
+    output: { name: "polished_email", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
