@@ -22,7 +22,7 @@ connections: []
 
 #### Subject Lines
 - Keep under 50 characters
-- Use personalisation where appropriate
+- Use personalization where appropriate
 - Create urgency without being clickbait
 - A/B test every campaign
 

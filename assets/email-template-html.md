@@ -26,7 +26,7 @@ connections: []
 ### Call-to-Action
 - Primary CTA button: {{cta_text}}
 - CTA link: {{cta_url}}
-- Button style: Brand colour, min 44px tap target
+- Button style: Brand color, min 44px tap target
 
 ### Footer
 - Company address (GDPR/CAN-SPAM requirement)

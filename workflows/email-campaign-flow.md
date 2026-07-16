@@ -3,7 +3,7 @@ type: workflow
 id: email-campaign-flow
 title: Email Campaign Flow
 description: "Audience segmentation, copy, A/B test plan, and send schedule"
-tags: [Production, Tested, Audience, Campaign, Optimisation]
+tags: [Production, Tested, Audience, Campaign, Optimization]
 connections:
   - target: audience-segmentation
     type: uses
@@ -56,13 +56,13 @@ execution:
 
 ## Overview
 
-This workflow produces a complete email campaign from audience segmentation through to A/B test plan and optimised send schedule.
+This workflow produces a complete email campaign from audience segmentation through to A/B test plan and optimized send schedule.
 
 ## Pipeline Stages
 
 ### Stage 1: Audience Segmentation
 
-Invoke the **audience-segmentation** skill to define target segments for the email campaign based on subscriber data and behaviour.
+Invoke the **audience-segmentation** skill to define target segments for the email campaign based on subscriber data and behavior.
 
 ### Stage 2: Email Copy Creation
 
@@ -83,7 +83,7 @@ Complete email campaign package containing:
 - Audience segment definitions
 - Email copy variants per segment
 - A/B test plan with hypothesis and success criteria
-- Send schedule with optimised timing
+- Send schedule with optimized timing
 
 ## Inputs
 
@@ -102,7 +102,7 @@ Complete email campaign package containing:
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

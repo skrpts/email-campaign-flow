@@ -21,7 +21,7 @@ GDPR (General Data Protection Regulation) compliance requirements for email mark
 
 ### Right to Withdraw
 - Every email must include an unsubscribe mechanism
-- Unsubscribe must be honoured within 30 days (best practice: immediately)
+- Unsubscribe must be honored within 30 days (best practice: immediately)
 - Make unsubscribe process simple (one click preferred)
 
 ### Data Usage

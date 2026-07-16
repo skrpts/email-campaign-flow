@@ -3,7 +3,7 @@ type: skill
 id: a-b-test-analysis
 title: A/B Test Analysis
 description: "Interprets experiment results and recommends winning variants"
-tags: [Tested, Campaign, Optimisation]
+tags: [Tested, Campaign, Optimization]
 connections:
   - target: llm-service
     type: runs_on
@@ -11,13 +11,13 @@ connections:
 
 ## Capability
 
-Designs A/B test parameters, analyses results for statistical significance, and recommends winning variants with confidence levels.
+Designs A/B test parameters, analyzes results for statistical significance, and recommends winning variants with confidence levels.
 
 ## When to Use
 
 - Testing email subject lines
 - Comparing copy variants
-- Optimising send times
+- Optimizing send times
 - Evaluating CTA effectiveness
 
 ## Inputs
