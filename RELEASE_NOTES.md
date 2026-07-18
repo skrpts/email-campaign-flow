@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.2.0
+GH#863 (K-045 intent/output mismatch) — the `email-campaign-writer` prompt, which produces the actual email campaign (the deliverable), was never invoked by the workflow: the pipeline built a brief, ran A/B analysis, and wrote subject lines but never wrote the emails. Wired it in as the last content step before language-polish via a new backing skill `email-campaign-composition` (`from_step` addressable), binding its inputs from upstream (campaign brief ← Audience Segmentation, subject lines ← Headline Writing) as explicit `context_params`. Re-pinned `polish-language`→1.0.6 and bound its `source` ← Email Campaign Composition so the output step polishes the campaign, not the positional previous step. Manifest skills 1→2, total 8→9.
+
 ## v1.1.26
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 

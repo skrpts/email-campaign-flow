@@ -9,6 +9,8 @@ connections:
     type: uses
   - target: a-b-test-analysis
     type: uses
+  - target: email-campaign-composition
+    type: uses
   - target: language-polish
     type: uses
   - target: llm-service
@@ -30,6 +32,7 @@ composite_steps:
   - "audience-segmentation"
   - "a-b-test-analysis"
   - "headline-writing"
+  - "email-campaign-composition"
 execution:
   - skill: "audience-segmentation"
     step_type: "synthesis"
@@ -45,6 +48,17 @@ execution:
     prompt: "write-headlines"
     step_type: "generation"
     output: { name: "subject_lines", type: "list" }
+  - skill: "email-campaign-composition"
+    prompt: "email-campaign-writer"
+    step_type: "generation"
+    output: { name: "email_campaign", type: "text" }
+    bindings:
+      campaign_brief:
+        from_step: "Audience Segmentation"
+        field: output
+      subject_lines:
+        from_step: "Headline Writing"
+        field: output
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
@@ -52,6 +66,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Email Campaign Composition"
+        field: output
 ---
 
 ## Overview
@@ -62,19 +80,23 @@ This workflow produces a complete email campaign from audience segmentation thro
 
 ### Stage 1: Audience Segmentation
 
-Invoke the **audience-segmentation** skill to define target segments for the email campaign based on subscriber data and behavior.
+Invoke the **audience-segmentation** skill to define target segments for the email campaign based on subscriber data and behavior. This produces the campaign brief.
 
-### Stage 2: Email Copy Creation
+### Stage 2: A/B Test Design
 
-Invoke the **email-campaign-writer** prompt to produce email copy variants for each audience segment.
+Invoke the **a-b-test-analysis** skill to design A/B test parameters for subject lines, copy, and send times, and to recommend the winning approach.
 
-### Stage 3: A/B Test Design
+### Stage 3: Subject Line Writing
 
-Invoke the **a-b-test-analysis** skill to design A/B test parameters for subject lines, copy, and send times.
+Invoke the **headline-writing** skill to produce the A/B-tested subject-line variants for the campaign.
 
-### Stage 4: Results Analysis
+### Stage 4: Email Copy Creation
 
-Invoke the **analyse-a-b-test** prompt to interpret test results and recommend the winning variant for full deployment.
+Invoke the **email-campaign-composition** skill (running the **email-campaign-writer** prompt) to write the actual campaign — targeted email copy variants for each audience segment, using the campaign brief and the tested subject lines. This is the deliverable.
+
+### Stage 5: Language Polish
+
+Invoke the **language-polish** skill to refine the composed emails into the final, publish-ready output.
 
 ## Output
 
