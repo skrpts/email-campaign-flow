@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.2.1
+GH#1044 — document the inputs this workflow's prompts REQUIRE but its Inputs table never listed. A user supplying exactly what the table asked for was running with required parameters unsatisfied — a silent wrong run, not a documentation nicety. Renamed 1 row(s) to the name the prompt actually consumes; documented 3 input(s): campaign_brief, campaign_goal, email_list. Every row is generated from the requiring prompt's own declared description, example and required flag — none invented. No behaviour change; documentation only.
+
 ## v1.2.0
 GH#863 (K-045 intent/output mismatch) — the `email-campaign-writer` prompt, which produces the actual email campaign (the deliverable), was never invoked by the workflow: the pipeline built a brief, ran A/B analysis, and wrote subject lines but never wrote the emails. Wired it in as the last content step before language-polish via a new backing skill `email-campaign-composition` (`from_step` addressable), binding its inputs from upstream (campaign brief ← Audience Segmentation, subject lines ← Headline Writing) as explicit `context_params`. Re-pinned `polish-language`→1.0.6 and bound its `source` ← Email Campaign Composition so the output step polishes the campaign, not the positional previous step. Manifest skills 1→2, total 8→9.
 

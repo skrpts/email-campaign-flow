@@ -111,7 +111,9 @@ Complete email campaign package containing:
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.brief}}` | Yes | Primary workflow brief or source content | `Paste a short brief describing the goal, audience, and constraints.` |
+| `{{input.campaign_brief}}` | Yes | What this email campaign is about | `Nurture sequence for free trial users who haven't converted after 7 days` |
+| `{{input.campaign_goal}}` | Yes | What you want recipients to do | `Convert free trial to paid plan` |
+| `{{input.email_list}}` | Yes | Who is on this list | `Free trial sign-ups from the last 30 days, mostly marketing managers` |
 
 ## Outputs
 
